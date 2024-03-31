@@ -4,11 +4,16 @@ using std::cout;
 using std::cin;
 using std::endl;
 
-const int SMALL_ROOM_CHARGE = 25;
-const int LARGE_ROOM_CHARGE = 35;
-const float TAX_RATE = .06;
+
 
 int main() {
+   // Constants
+   const int SMALL_ROOM_CHARGE = 25;
+   const int LARGE_ROOM_CHARGE = 35;
+   const float TAX_RATE = 0.06;
+   const int EXPIRIATION_DATE = 30;
+
+   // Variables
    int smallRoomTotal;
    int largeRoomTotal;
    float billTax;
@@ -34,5 +39,5 @@ int main() {
    cout << "====================================\n";
 
    cout << "Your total bill is: " << billTotal + billTax << "\n";
-   cout << "This estimate is valid for 30 days" << endl;
+   cout << "This estimate is valid for " << EXPIRIATION_DATE << " days." << endl;
 }
